@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) 2016-2014, CloudSub technology Co., Ltd.
+
+    All rights reserved.
+
+-->
+
+<!--
+    Description: SSB 接口发布配置。
+    Version: 1.0.0, Nov 22, 2016
+    Author:
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:ssb="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 声明需要暴露的服务接口 -->
+    <ssb:service interface="com.jp.common.file.service.IFileInfoService" ref="fileInfoService" />
+    <ssb:service interface="com.jp.common.file.service.IFileService" ref="fileService" />
+
+
+</beans>
